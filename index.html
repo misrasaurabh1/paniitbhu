@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="BHU, BHU tour, IIT BHU panorama, panorama, IIT BHU images, IT BHU images, vishwanath temple, webfuel,IIT-BHU, virtual tour it bhu, tour it bhu" /> 
+<meta name="description" content="Interactive panoramas of Banaras Hindu University and Indian Institute of Technology, BHU (IIT-BHU). This website gives the panoramic virtual tour of several locations within the campus" /> 
+<META NAME="Author" CONTENT="Webfuel Technologies : contactus@webfuel.in, Saurabh Misra: saurabh@webfuel.in, Pranjal Mittal pranjal@webfuel.in">
+<link rel="stylesheet" type="text/css" href="css/viewer.css" />
+<link rel="stylesheet" type="text/css" href="css/shadowbox.css"/>
+<link rel="stylesheet" href="css/jquery.treeview.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript" src="js/shadowbox.js"></script>
+<script src="js/jquery.treeview.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+		
+	// For showing the list in a tree view.
+
+	$(".nav_list").treeview({
+		collapsed: true,
+		unique: true,
+	});
+});
+
+
+	function initialize() {
+    var latlng = new google.maps.LatLng(25.26686, 82.99166);
+    var myOptions = {
+      zoom: 16,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.HYBRID    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"),
+        myOptions);
+	var limbdi=new google.maps.LatLng(25.26123,82.98593);
+	var lc=new google.maps.LatLng(25.26081,82.98690);
+	var gymkhana=new google.maps.LatLng(25.25993,82.98891);
+	var electrical=new google.maps.LatLng(25.26208,82.99253);
+	var chemical=new google.maps.LatLng(25.25991,82.99382);
+	var mechanical=new google.maps.LatLng(25.262402,82.991468);
+	var workshop2=new google.maps.LatLng(25.262395,82.990666);
+	var electronics=new google.maps.LatLng(25.262555,82.990100);
+	var elab1=new google.maps.LatLng(25.263026,82.990666);
+	var elab2=new google.maps.LatLng(25.262766,82.990406);
+	var elab3=new google.maps.LatLng(25.262863,82.990151);
+	var alumni=new google.maps.LatLng(25.25993,82.98484);
+	var ncc=new google.maps.LatLng(25.26149,82.99023);
+	var sb=new google.maps.LatLng(25.26041,82.99411);
+	var admin=new google.maps.LatLng(25.26213,82.98956);
+	var ablt=new google.maps.LatLng(25.26291,82.98880);
+	var dg=new google.maps.LatLng(25.26318,82.98647);
+	var lib=new google.maps.LatLng(25.26552,82.99118);
+	var vish=new google.maps.LatLng(25.26231,82.98394);
+	var vt=new google.maps.LatLng(25.26580,82.98896);
+	var saluja= new google.maps.LatLng(25.270506,82.983883);
+	var amphi= new google.maps.LatLng(25.26749,82.99612);
+	var arts= new google.maps.LatLng(25.26924,82.99534);
+	var athletic=new google.maps.LatLng(25.266691,82.994788);
+	var botany=new google.maps.LatLng(25.267191,82.991387);
+	var broacha1=new google.maps.LatLng(25.27195,82.98949);
+	var broacha2=new google.maps.LatLng(25.27262,82.98931);
+	var chemistry=new google.maps.LatLng(25.26740,82.99336);
+	var co=new google.maps.LatLng(25.26475,82.99476);
+	var courts=new google.maps.LatLng(25.26158,82.98798);
+	var ctscan=new google.maps.LatLng(25.277378,83.000625);
+	var economics=new google.maps.LatLng(25.268823,82.991068);
+	var fms=new google.maps.LatLng(25.272248,82.995585);
+	var geology=new google.maps.LatLng(25.26876,82.99157);
+	var ims=new google.maps.LatLng(25.275328,82.999633);
+	var lanka=new google.maps.LatLng(25.277899,83.002438);
+	var law=new google.maps.LatLng(25.26963,82.99816);
+	var ldgh=new google.maps.LatLng(25.27556,82.99616);
+	var malviya=new google.maps.LatLng(25.275794,82.997669);
+	var maths=new google.maps.LatLng(25.27039,82.99248);
+	var medicine=new google.maps.LatLng(25.27046,82.99797);
+	var meta=new google.maps.LatLng(25.26972,82.99243);
+	var mmv=new google.maps.LatLng(25.27556,83.00082);
+	var physics=new google.maps.LatLng(25.26837,82.99417);
+	var scisquare=new google.maps.LatLng(25.26847,82.99291);
+	var socialsci=new google.maps.LatLng(25.27001,82.99507);
+	var ssl=new google.maps.LatLng(25.27787,82.99873);
+	var sslmw=new google.maps.LatLng(25.276104,82.999472);
+	var vt2=new google.maps.LatLng(25.26562,82.98979);
+	
+	var marker_vt2 = new google.maps.Marker({
+      position: vt2,
+      map: map,
+      title:"Outside Vishwanath Temple"
+  });
+	var marker_amphi = new google.maps.Marker({
+      position: amphi,
+      map: map,
+      title:"Amphitheater"
+  });
+	var marker_arts = new google.maps.Marker({
+      position: arts,
+      map: map,
+      title:"Faculty of Arts"
+  });
+	var marker_athletic = new google.maps.Marker({
+      position: athletic,
+      map: map,
+      title:"Athletic Track & Indoor Stadium"
+  });
+	var marker_botany = new google.maps.Marker({
+      position: botany,
+      map: map,
+      title:"Department of Botany"
+  });
+	var marker_broacha1 = new google.maps.Marker({
+      position: broacha1,
+      map: map,
+      title:"Outside Broacha Hostel"
+  });
+	var marker_broacha2 = new google.maps.Marker({
+      position: broacha2,
+      map: map,
+      title:"Inside Broacha Hostel"
+  });
+	var marker_chemistry = new google.maps.Marker({
+      position: chemistry,
+      map: map,
+      title:"Department of Chemistry"
+  });
+	var marker_co = new google.maps.Marker({
+      position: co,
+      map: map,
+      title:"Central Office, BHU"
+  });
+	var marker_courts = new google.maps.Marker({
+      position: courts,
+      map: map,
+      title:"IIT Courts"
+  });
+	var marker_ctscan = new google.maps.Marker({
+      position: ctscan,
+      map: map,
+      title:"Sir Sunderlal Hospital OPD and CT Scan"
+  });
+	var marker_economics = new google.maps.Marker({
+      position: economics,
+      map: map,
+      title:"Faculty of Commerce"
+  });
+	var marker_fms = new google.maps.Marker({
+      position: fms,
+      map: map,
+      title:"Faculty of Management Studies"
+  });
+	var marker_geology = new google.maps.Marker({
+      position: geology,
+      map: map,
+      title:"Department of Geology and Geophysics"
+  });
+	var marker_ims = new google.maps.Marker({
+      position: ims,
+      map: map,
+      title:"Institute of Medical Sciences"
+  });
+	var marker_lanka = new google.maps.Marker({
+      position: lanka,
+      map: map,
+      title:"BHU Main Gate, Lanka"
+  });
+	var marker_law = new google.maps.Marker({
+      position: law,
+      map: map,
+      title:"Law School, BHU"
+  });
+	var marker_ldgh = new google.maps.Marker({
+      position: ldgh,
+      map: map,
+      title:"Lakshman Das Guest House"
+  });
+	var marker_malviya = new google.maps.Marker({
+      position: malviya,
+      map: map,
+      title:"Malviya Bhavan"
+  });
+	var marker_maths = new google.maps.Marker({
+      position: maths,
+      map: map,
+      title:"Mathematical Sciences"
+  });
+	var marker_medicine = new google.maps.Marker({
+      position: medicine,
+      map: map,
+      title:"Medicinal Chemistry and Ayurveda"
+  });
+	var marker_meta = new google.maps.Marker({
+      position: meta,
+      map: map,
+      title:"Department of Metallurgy"
+  });
+	var marker_mmv = new google.maps.Marker({
+      position: mmv,
+      map: map,
+      title:"Mahila Mahavidyalaya Chowk"
+  });
+	var marker_physics = new google.maps.Marker({
+      position: physics,
+      map: map,
+      title:"Department of Physics"
+  });
+	var marker_scisquare = new google.maps.Marker({
+      position: scisquare,
+      map: map,
+      title:"Sciences, Mining and Metallurgy Square"
+  });
+	var marker_lc = new google.maps.Marker({
+      position: lc,
+      map: map,
+      title:"Limbdi Corner"
+  });
+	var marker_socialsci = new google.maps.Marker({
+      position: socialsci,
+      map: map,
+      title:"Faculty of Social Sciences And Arts"
+  });
+	var marker_ssl = new google.maps.Marker({
+      position: ssl,
+      map: map,
+      title:"Sir Sunderlal Hospital"
+  });
+	var marker_sslmw = new google.maps.Marker({
+      position: sslmw,
+      map: map,
+      title:"Sir Sunderlal Hospital Wards"
+  });
+	var marker_saluja = new google.maps.Marker({
+      position: saluja,
+      map: map,
+      title:"Saluja House Girls Hostel"
+  });
+	var marker_admin = new google.maps.Marker({
+      position: admin,
+      map: map,
+      title:"IIT-Library & Administrative Office"
+  });
+	var marker_limbdi = new google.maps.Marker({
+      position: limbdi,
+      map: map,
+      title:"Limbdi Hostel"
+  });
+  var marker_lc = new google.maps.Marker({
+      position: lc,
+      map: map,
+      title:"Limbdi Corner"
+  });
+  var marker_ablt = new google.maps.Marker({
+      position: ablt,
+      map: map,
+      title:"Administrative Block Lecture Theater"
+  });
+  var marker_dg = new google.maps.Marker({
+      position: dg,
+      map: map,
+      title:"Dhanrajgiri Corner"
+  });
+  var marker_lib = new google.maps.Marker({
+      position: lib,
+      map: map,
+      title:"BHU Library and IAS"
+  });
+  var marker_vish = new google.maps.Marker({
+      position: vish,
+      map: map,
+      title:"Vishweshwaraiya Hostel"
+  });
+  var marker_vt = new google.maps.Marker({
+      position: vt,
+      map: map,
+      title:"Vishwanath Temple"
+  });
+  var marker_gymkhana = new google.maps.Marker({
+      position: gymkhana,
+      map: map,
+      title:"IIT-Gymkhana"
+  });
+  var marker_electrical = new google.maps.Marker({
+      position: electrical,
+      map: map,
+      title:"Electrical Engineering"
+  });
+  var marker_chemical = new google.maps.Marker({
+      position: chemical,
+      map: map,
+      title:"Chemical Engineering"
+  });
+  var marker_mechanical = new google.maps.Marker({
+      position: mechanical,
+      map: map,
+      title:"Mechanical Engineering"
+  });
+  var marker_workshop2 = new google.maps.Marker({
+      position: workshop2,
+      map: map,
+      title:"Workshop - CISF Lab"
+  });
+  var marker_electronics = new google.maps.Marker({
+      position: electronics,
+      map: map,
+      title:"Electronics Engineering"
+  });
+  var marker_elab1 = new google.maps.Marker({
+      position: elab1,
+      map: map,
+      title:"Electronics - Microwave Tubes Lab"
+  });
+  var marker_elab2 = new google.maps.Marker({
+      position: elab2,
+      map: map,
+      title:"Electronics - Microprocerssors Lab"
+  });
+  var marker_elab3 = new google.maps.Marker({
+      position: elab3,
+      map: map,
+      title:"Electronics - MIcrowave Applications Lab"
+  });
+  var marker_alumni = new google.maps.Marker({
+      position: alumni,
+      map: map,
+      title:"Alumni Center"
+  });
+  var marker_ncc = new google.maps.Marker({
+      position: ncc,
+      map: map,
+      title:"NCC Office"
+  });
+  var marker_sb = new google.maps.Marker({
+      position: sb,
+      map: map,
+      title:"Swatantrata Bhawan"
+  });
+	
+	google.maps.event.addListener(marker_amphi, 'click', function() {
+    map.setCenter(amphi);
+	document.getElementById("a_amphi").click();
+        
+	 });
+	 google.maps.event.addListener(marker_vt2, 'click', function() {
+    map.setCenter(vt2);
+	document.getElementById("a_vt2").click();
+        
+	 });
+	 google.maps.event.addListener(marker_arts, 'click', function() {
+    map.setCenter(arts);
+	document.getElementById("a_arts").click();
+        
+	 });
+	 google.maps.event.addListener(marker_athletic, 'click', function() {
+    map.setCenter(athletic);
+	document.getElementById("a_athletic").click();
+        
+	 });
+	 google.maps.event.addListener(marker_botany, 'click', function() {
+    map.setCenter(botany);
+	document.getElementById("a_botany").click();
+        
+	 });
+	 google.maps.event.addListener(marker_broacha1, 'click', function() {
+    map.setCenter(broacha1);
+	document.getElementById("a_broacha1").click();
+        
+	 });
+	 google.maps.event.addListener(marker_broacha2, 'click', function() {
+    map.setCenter(broacha2);
+	document.getElementById("a_broacha2").click();
+        
+	 });
+	 google.maps.event.addListener(marker_chemistry, 'click', function() {
+    map.setCenter(chemistry);
+	document.getElementById("a_chemistry").click();
+        
+	 });
+	 google.maps.event.addListener(marker_co, 'click', function() {
+    map.setCenter(co);
+	document.getElementById("a_co").click();
+        
+	 });
+	 google.maps.event.addListener(marker_courts, 'click', function() {
+    map.setCenter(courts);
+	document.getElementById("a_courts").click();
+        
+	 });
+	 google.maps.event.addListener(marker_ctscan, 'click', function() {
+    map.setCenter(ctscan);
+	document.getElementById("a_ctscan").click();
+        
+	 });
+	 google.maps.event.addListener(marker_economics, 'click', function() {
+    map.setCenter(economics);
+	document.getElementById("a_economics").click();
+        
+	 });
+	 google.maps.event.addListener(marker_fms, 'click', function() {
+    map.setCenter(fms);
+	document.getElementById("a_fms").click();
+        
+	 });
+	 google.maps.event.addListener(marker_geology, 'click', function() {
+    map.setCenter(geology);
+	document.getElementById("a_geology").click();
+        
+	 });
+	 google.maps.event.addListener(marker_ims, 'click', function() {
+    map.setCenter(ims);
+	document.getElementById("a_ims").click();
+        
+	 });
+	 google.maps.event.addListener(marker_lanka, 'click', function() {
+    map.setCenter(lanka);
+	document.getElementById("a_lanka").click();
+        
+	 });
+	 google.maps.event.addListener(marker_law, 'click', function() {
+    map.setCenter(law);
+	document.getElementById("a_law").click();
+        
+	 });
+	 google.maps.event.addListener(marker_ldgh, 'click', function() {
+    map.setCenter(ldgh);
+	document.getElementById("a_ldgh").click();
+        
+	 });
+	 google.maps.event.addListener(marker_malviya, 'click', function() {
+    map.setCenter(malviya);
+	document.getElementById("a_malviya").click();
+        
+	 });
+	 google.maps.event.addListener(marker_maths, 'click', function() {
+    map.setCenter(maths);
+	document.getElementById("a_maths").click();
+        
+	 });
+	 google.maps.event.addListener(marker_medicine, 'click', function() {
+    map.setCenter(medicine);
+	document.getElementById("a_medicine").click();
+        
+	 });
+	 google.maps.event.addListener(marker_meta, 'click', function() {
+    map.setCenter(meta);
+	document.getElementById("a_meta").click();
+        
+	 });
+	 google.maps.event.addListener(marker_mmv, 'click', function() {
+    map.setCenter(mmv);
+	document.getElementById("a_mmv").click();
+        
+	 });
+	 google.maps.event.addListener(marker_physics, 'click', function() {
+    map.setCenter(physics);
+	document.getElementById("a_physics").click();
+        
+	 });
+	 google.maps.event.addListener(marker_scisquare, 'click', function() {
+    map.setCenter(scisquare);
+	document.getElementById("a_scisquare").click();
+        
+	 });
+	 google.maps.event.addListener(marker_socialsci, 'click', function() {
+    map.setCenter(socialsci);
+	document.getElementById("a_socialsci").click();
+        
+	 });
+	 google.maps.event.addListener(marker_ssl, 'click', function() {
+    map.setCenter(ssl);
+	document.getElementById("a_ssl").click();
+        
+	 });
+	 google.maps.event.addListener(marker_sslmw, 'click', function() {
+    map.setCenter(sslmw);
+	document.getElementById("a_sslmw").click();
+        
+	 });
+   google.maps.event.addListener(marker_limbdi, 'click', function() {
+    map.setCenter(limbdi);
+	document.getElementById("a_limbdi").click();
+        
+	 });
+google.maps.event.addListener(marker_admin, 'click', function() {
+    map.setCenter(admin);
+	document.getElementById("a_admin").click();
+        
+	 });
+	 google.maps.event.addListener(marker_saluja, 'click', function() {
+    map.setCenter(saluja);
+	document.getElementById("a_saluja").click();
+        
+	 });
+google.maps.event.addListener(marker_lc, 'click', function() {
+    map.setCenter(lc);
+	document.getElementById("a_lc").click();
+        
+	 });
+	 google.maps.event.addListener(marker_ablt, 'click', function() {
+    map.setCenter(ablt);
+	document.getElementById("a_ablt").click();
+        
+	 });
+google.maps.event.addListener(marker_dg, 'click', function() {
+    map.setCenter(dg);
+	document.getElementById("a_dg").click();
+        
+	 });
+google.maps.event.addListener(marker_lib, 'click', function() {
+    map.setCenter(lib);
+	document.getElementById("a_lib").click();
+        
+	 });
+google.maps.event.addListener(marker_vish, 'click', function() {
+    map.setCenter(vish);
+	document.getElementById("a_vish").click();
+        
+	 });
+google.maps.event.addListener(marker_vt, 'click', function() {
+    map.setCenter(vt);
+	document.getElementById("a_vt").click();
+        
+	 });
+google.maps.event.addListener(marker_gymkhana, 'click', function() {
+    map.setCenter(gymkhana);
+	document.getElementById("a_gymkhana").click();
+        
+	 });
+google.maps.event.addListener(marker_electrical, 'click', function() {
+    map.setCenter(electrical);
+	document.getElementById("a_electrical").click();
+        
+	 });
+google.maps.event.addListener(marker_chemical, 'click', function() {
+    map.setCenter(chemical);
+	document.getElementById("a_chemical").click();
+        
+	 });
+google.maps.event.addListener(marker_mechanical, 'click', function() {
+    map.setCenter(mechanical);
+	document.getElementById("a_mechanical").click();
+        
+	 });
+google.maps.event.addListener(marker_workshop2, 'click', function() {
+    map.setCenter(workshop2);
+	document.getElementById("a_workshop2").click();
+        
+	 });
+google.maps.event.addListener(marker_electronics, 'click', function() {
+    map.setCenter(electronics);
+	document.getElementById("a_electronics").click();
+        
+	 });
+google.maps.event.addListener(marker_elab1, 'click', function() {
+    map.setCenter(elab1);
+	document.getElementById("a_elab1").click();
+        
+	 });
+google.maps.event.addListener(marker_elab2, 'click', function() {
+    map.setCenter(elab2);
+	document.getElementById("a_elab2").click();
+        
+
+	 });
+google.maps.event.addListener(marker_elab3, 'click', function() {
+    map.setCenter(elab3);
+	document.getElementById("a_elab3").click();
+        
+	 });
+google.maps.event.addListener(marker_alumni, 'click', function() {
+    map.setCenter(alumni);
+	document.getElementById("a_alumni").click();
+        
+	 });
+google.maps.event.addListener(marker_ncc, 'click', function() {
+    map.setCenter(ncc);
+	document.getElementById("a_ncc").click();
+        
+	 });
+google.maps.event.addListener(marker_sb, 'click', function() {
+    map.setCenter(sb);
+	document.getElementById("a_sb").click();
+        
+	 });
+		}
+		</script>
+	
+	<title>BHU and IIT BHU Panoramic Virtual Tour</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body onload="initialize();">
+	<div id="navbar"> 
+	
+	<ul class="navul">
+		<li class="navli"> <a class="nava" href="http://webfuel.in" target="_blank">Webfuel</a> </li>
+		<li class="navli"> <a class="nava" href="http://webfuel.in/services" target="_blank">Services</a> </li>
+		<li class="navli"> <a class="nava" href="http://webfuel.in/technologies" target="_blank">Technologies</a> </li>
+		</ul>
+	<span id="nav_title">BHU & IIT-BHU Panoramic Virtual Tour</span>	
+							
+	
+	<ul class="navul">
+		<li class="navlir2"> <a class="nava" href="http://webfuel.in/about-us" target="_blank">About Us</a> </li>
+		<li class="navlir1"> <a class="nava" href="http://webfuel.in/contact-us" target="_blank">Contact Us</a></li>
+		
+	</ul>
+	</div>
+
+	<div id="nav_pane">
+	<span style="text-align:left;">
+	Navigation Pane. Click here or the markers on the map to see the Panorama.</span>
+		<hr>
+	
+    <ul class="nav_list">
+		<li>Academic
+
+			<ul class="nav_list">
+			<li>BHU
+				<ul class="nav_list">
+				<li><a href="images/ims/ims.htm" rel="shadowbox" id="a_ims" class="navl">Institute of Medical Sciences</a></li>
+				<li><a href="images/fms/fms.htm" rel="shadowbox" id="a_fms" class="navl">Faculty of Management Sciences</a></li>
+				<li><a href="images/physics/physics.htm" rel="shadowbox" id="a_physics" class="navl">Physics Dept</a></li>
+				<li><a href="images/chemistry/chemistry.htm" rel="shadowbox" id="a_chemistry" class="navl">Chemistry Dept</a></li>
+				<li><a href="images/arts/arts.htm" rel="shadowbox" id="a_arts" class="navl">Arts Faculty</a></li>
+				<li><a href="images/socialsci/socialsci.htm" rel="shadowbox" id="a_socialsci" class="navl">Social Sciences and Arts Faculty</a></li>
+				<li><a href="images/botany/botany.htm" rel="shadowbox" id="a_botany" class="navl">Botany Dept</a></li>
+				<li><a href="images/economics/economics.htm" rel="shadowbox" id="a_economics" class="navl">Commerce Faculty</a></li>
+				<li><a href="images/geology/geology.htm" rel="shadowbox" id="a_geology" class="navl">Geology Dept</a></li>
+				<li><a href="images/maths/maths.htm" rel="shadowbox" id="a_maths" class="navl">Centre for Mathematical Sciences</a></li>
+				<li><a href="images/law/law.htm" rel="shadowbox" id="a_law" class="navl">Law School</a></li>
+				<li><a href="images/mmv/mmv.htm" rel="shadowbox" id="a_mmv" class="navl">Mahila Mahavidyalaya Chowk</a></li>
+				<li><a href="images/scisquare/scisquare.htm" rel="shadowbox" id="a_scisquare" class="navl">Sciences, Mining and Metallurgy Square</a></li>
+				<li><a href="images/medicine/medicine.htm" rel="shadowbox" id="a_medicine" class="navl">Medicinal Chemistry and Ayurveda</a></li>
+				<li><a href="images/lib/lib.htm" rel="shadowbox" id="a_lib" class="navl">BHU Library And Institute of Agriculture Sciences</a></li>
+				</ul>
+				</li>
+			<li>IIT-BHU
+				<ul class="nav_list">
+			    <li><a href="images/electrical/electrical.htm" rel="shadowbox" id="a_electrical" class="navl" >Electrical Enginnering</a></li>
+			    <li><a href="images/chemical/chemical.htm" rel="shadowbox" id="a_chemical" class="navl">Chemical Engineering</a></li>
+			    <li><a href="images/mechanical/mechanical.htm" rel="shadowbox" id="a_mechanical" class="navl">Mechanical Engineering</a></li>
+			    <li><a href="images/workshop2/workshop2.htm" rel="shadowbox" id="a_workshop2" class="navl">Workshop - CISF Lab</a></li>
+			    <li><a href="images/electronics/electronics.htm" rel="shadowbox" id="a_electronics" class="navl">Electronics Engineering</a>
+				    <ul class="nav_list">
+				        <li><a href="images/elab2/elab2.htm" rel="shadowbox" id="a_elab2" class="navl">Microprocessors Lab</a></li>
+				        <li><a href="images/elab1/elab1.htm" rel="shadowbox" id="a_elab1" class="navl">Microwave Tubes Lab</a></li>
+				        <li><a href="images/elab3/elab3.htm" rel="shadowbox" id="a_elab3" class="navl">Microwave Applications Lab</a></li>
+		            </ul>
+                </li>
+			    <li><a href="images/admin/admin.htm" rel="shadowbox" id="a_admin" class="navl">IIT-Library and Administrative Office</a></li>
+			    
+			    <li><a href="images/ablt/ablt.htm" rel="shadowbox" id="a_ablt" class="navl">Aministrative Block Lecture Theater</a></li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			
+
+		<li>Hostels
+	        <ul class="nav_list">
+		        <li><a href="images/4/pan.htm" rel="shadowbox" id="a_limbdi" class="navl">Limbdi Hostel</a></li>
+		        <li><a href="images/vish/vish.htm" rel="shadowbox" id="a_vish" class="navl">Vishweshwaraiya Hostel</a></li>
+		        <li><a href="images/broacha1/broacha1.htm" rel="shadowbox" id="a_broacha1" class="navl">Outside Broacha Hostel</a></li>
+				<li><a href="images/broacha2/broacha2.htm" rel="shadowbox" id="a_broacha2" class="navl">Inside Broacha Hostel</a></li>
+				<li><a href="images/saluja/saluja.htm" rel="shadowbox" id="a_saluja" class="navl">Saluja House Girls Hostel</a></li>
+            </ul>
+        </li>		
+
+        <li>Other Landmarks
+	        <ul class="nav_list">
+		        <li><a href="images/lanka/lanka.htm" rel="shadowbox" id="a_lanka" class="navl">BHU Main Gate, Lanka</a></li>
+				<li><a href="images/vt/vt.htm" rel="shadowbox" id="a_vt" class="navl">Vishwanath Temple</a></li>
+		        <li><a href="images/vt2/vt2.htm" rel="shadowbox" id="a_vt2" class="navl">Outside Vishwanath Temple</a></li>
+				<li><a href="images/co/co.htm" rel="shadowbox" id="a_co" class="navl">Central Office, BHU</a></li>
+				<li><a href="images/ssl/ssl.htm" rel="shadowbox" id="a_ssl" class="navl">Sir Sunderlal Hospital</a></li>
+				<li><a href="images/ctscan/ctscan.htm" rel="shadowbox" id="a_ctscan" class="navl">Sir Sunderlal OPD and CT Scan</a></li>
+				<li><a href="images/sslmw/sslmw.htm" rel="shadowbox" id="a_sslmw" class="navl">Sir Sunderlal Wards</a></li>
+				<li><a href="images/malviya/malviya.htm" rel="shadowbox" id="a_malviya" class="navl">Malviya Bhawan</a></li>
+				<li><a href="images/amphi/amphi.htm" rel="shadowbox" id="a_amphi" class="navl">Amphitheater</a></li>
+				<li><a href="images/athletic/athletic.htm" rel="shadowbox" id="a_athletic" class="navl">Athletic Track and Indoor Stadium</a></li>
+				<li><a href="images/courts/courts.htm" rel="shadowbox" id="a_courts" class="navl">IIT-Courts</a></li>
+				<li><a href="images/sb/sb.htm" rel="shadowbox" id="a_sb" class="navl">Swatantrata Bhawan</a></li>
+				<li><a href="images/ldgh/ldgh.htm" rel="shadowbox" id="a_ldgd" class="navl">Lakshman Das Guest House</a></li>
+				<li><a href="images/alumni/Alumni.htm" rel="shadowbox" id="a_alumni" class="navl">IIT Alumni Center</a></li>
+		        <li><a href="images/gymkhana/gymkhana.htm" rel="shadowbox" id="a_gymkhana" class="navl">IIT-Gymkhana</a></li>
+		        
+		        <li><a href="images/3/pan.htm" rel="shadowbox" id="a_lc" class="navl">Limbdi Corner</a></li>
+		        <li><a href="images/dg/dg.htm" rel="shadowbox" id="a_dg" class="navl">Dhanrajgiri Corner</a></li>
+		        <li><a href="images/ncc/ncc.htm" rel="shadowbox" id="a_ncc" class="navl">NCC Office</a></li>
+            </ul>	   
+        </li>
+
+        </ul>
+		</div>
+		
+	<div id="map_canvas"></div>
+	
+</body>
+</html>
+	
+	
+	
